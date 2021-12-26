@@ -48,6 +48,7 @@ li:first-letter {
   margin-right: 5px;
   height: 64px;
   width: 64px;
+  margin-bottom: 30px;
 }
 
 .weather-temperature strong {
@@ -60,13 +61,12 @@ li:first-letter {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -32px;
+  top: -34px;
 }
 
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
-  text-decoration: none;
 }
 
 .weather-temperature .active:hover {
