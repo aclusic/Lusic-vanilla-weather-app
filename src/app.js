@@ -76,6 +76,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
+  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -104,6 +105,7 @@ function displayTemperature(response) {
 function search(cityName) {
   let apiKey = "d3bf41ebab3099c885d2313ad708496f";
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`;
+  console.log(apiURL);
   axios.get(apiURL).then(displayTemperature);
 }
 
